@@ -49,6 +49,6 @@ def index():
 if __name__ == '__main__':
     if os.path.isfile('settings.conf'):
         config.read('settings.conf')
-        app.run(host = "0.0.0.0", port=5001)
+        app.run(host = "0.0.0.0", port=5000)
     else:
         print("settings.conf not found")

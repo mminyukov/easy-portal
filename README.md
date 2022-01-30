@@ -14,17 +14,17 @@
 
 | Секция | Параметр | Тип | Описание |
 |-----------|------|----|----------|
-| main | titleSite | string | Загаловок страницы |
-| main | header | string | Загаловок шапки сайта |
+| main | titleSite | string | Заголовок страницы |
+| main | header | string | Заголовок шапки сайта |
 | questionbutton | enable | boolean | Включение кнопки вопроса |
-| questionbutton | title | string | Загаловок сообщения кнопки |
+| questionbutton | title | string | Заголовок сообщения кнопки |
 | questionbutton | content | string | Сообщение кнопки |
 | banner | enable | boolean | Включение баннера с сообщением |
-| banner | title | string | Загаловок банера |
+| banner | title | string | Заголовок банера |
 | banner | content | string | Сообщение банера |
-| card.N | title | string | Загаловок карточки сервиса |
+| card.N | title | string | Заголовок карточки сервиса |
 | card.N | description | string | Описание карточки сервиса |
-| card.N | link | string | Ссылка до сервиса |
+| card.N | link | string | Ссылка на сервис |
 
 ## Запуск
 
