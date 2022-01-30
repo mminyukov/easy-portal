@@ -17,7 +17,7 @@ def getCardsSettings():
         try:
             cardContent = {}
             cardContent['title'] = config[card]['title']
-            cardContent['text'] = config[card]['text']
+            cardContent['description'] = config[card]['description']
             cardContent['link'] = config[card]['link']
             cardsContent.append(cardContent)
         except:
@@ -32,7 +32,7 @@ def index():
     questionButton = []
 
     if config.getboolean('banner', 'enable'):
-        banner = [config['banner']['header'], config['banner']['content']]
+        banner = [config['banner']['title'], config['banner']['content']]
 
     if config.getboolean('questionbutton', 'enable'):
         questionButton = [config['questionbutton']['title'], config['questionbutton']['content']]
@@ -49,6 +49,6 @@ def index():
 if __name__ == '__main__':
     if os.path.isfile('settings.conf'):
         config.read('settings.conf')
-        app.run(host = "0.0.0.0")
+        app.run(host = "0.0.0.0", port=5001)
     else:
         print("settings.conf not found")
