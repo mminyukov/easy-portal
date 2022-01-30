@@ -2,7 +2,7 @@ FROM python:3.9.10-slim
 
 RUN pip3 install flask
 
-WORDIR /portal
+WORKDIR /portal
 COPY app/ .
 
 EXPOSE 5000
