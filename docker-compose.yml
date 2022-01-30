@@ -1,0 +1,10 @@
+version: '3'
+services:
+  portal:
+    build: .
+    container_name: easy-portal
+    restart: on-failure
+    volumes:
+      - ./app/settings.conf:/portal/settings.conf
+    ports:
+      - "5000:5000"
