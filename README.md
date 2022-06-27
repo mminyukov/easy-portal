@@ -45,12 +45,12 @@ python3 main.py
 
 Сборка docker образа
 ```bash
-docker build -t easy-portal:1.0 .
+docker build -t simple-portal:1.0 .
 ```
 
 Запуск docker образа
 ```bash
-docker run -d -p5000:5000 easy-portal:1.0
+docker run -d -p5000:5000 simple-portal:1.0
 ```
 
 Запуск docker образа через docker-compose

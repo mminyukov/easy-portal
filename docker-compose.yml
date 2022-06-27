@@ -2,7 +2,7 @@ version: '3'
 services:
   portal:
     build: .
-    container_name: easy-portal
+    container_name: simple-portal
     restart: on-failure
     volumes:
       - ./app/settings.conf:/portal/settings.conf
