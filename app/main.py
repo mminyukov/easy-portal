@@ -1,6 +1,7 @@
 import re
-import os.path
+import os
 import configparser
+from waitress import serve
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -49,6 +50,6 @@ def index():
 if __name__ == '__main__':
     if os.path.isfile('settings.conf'):
         config.read('settings.conf')
-        app.run(host = "0.0.0.0", port=5000)
+        serve(app, host = "0.0.0.0", port = 5000)
     else:
-        print("settings.conf not found")
+        raise Exception("settings.conf not found")

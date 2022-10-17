@@ -1,6 +1,6 @@
-FROM python:3.9.10-slim
+FROM python:3.10-slim
 
-RUN pip3 install flask
+RUN pip3 install flask waitress
 
 WORKDIR /portal
 COPY app/ .
